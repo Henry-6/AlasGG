@@ -69,3 +69,8 @@ class RequestHumanTakeover(Exception):
 
 class HardNotSatisfied(RequestHumanTakeover):
     pass
+
+
+class AutoSearchSetError(Exception):
+    # AlasGG fork 引用了该异常但从未定义（会遮住任务的真实报错）
+    pass
